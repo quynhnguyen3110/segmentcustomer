@@ -119,9 +119,7 @@ if choice=='Mô hình dự đoán':
         segments_df['CustomerID'] = segments_df['CustomerID'].astype(str)
         st.button('Find Customer Segment'):
         segment = segments_df.loc[segments_df['CustomerID'] == str(customer_id)]
-        if not segment.empty:
-            st.write(segment)
-        else:
+       else:
             st.write("Không tìm thấy Customer ID")
         # segment = customer_segment(customer_id)
         # st.write(f"The segment for Customer ID {customer_id} is: {segment}")
