@@ -55,7 +55,7 @@ if choice == 'Giới thiệu Project':
 elif choice == 'Insight dữ liệu':
     st.subheader("1. Thống kê về các quốc gia mua hàng")
     st.write("10 quốc gia mua hàng nhiều nhất và ít nhất (ngoại trừ UK)")
-    st.image("C:/Users/Asus/Documents/Quynh nguyen/Course_10/GUI_submit/country.jpg")
+    st.image("country.jpg")
     st.write("Số lượng hàng bán ở các quốc gia (ngoại trừ UK)")
     st.image("country_wise.png")
     
