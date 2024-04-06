@@ -117,8 +117,8 @@ if choice=='Mô hình dự đoán':
         # st.write("Mã khách hàng:", customer_id)
         segments_df = pd.read_csv('rfm2.csv')
         segments_df['CustomerID'] = segments_df['CustomerID'].astype(str)
-        if st.button('Find Customer Segment'):
-            segment = segments_df.loc[segments_df['CustomerID'] == str(customer_id)]
+        st.button('Find Customer Segment'):
+        segment = segments_df.loc[segments_df['CustomerID'] == str(customer_id)]
         if not segment.empty:
             st.write(segment)
         else:
